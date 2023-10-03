@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XDOTSKILLS</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+	body {font-family: "Poppins", sans-serif;
+	margin: 50px 50px 0 50px;
+	background-color: #faf9f6;
+	display: flex;
+	flex-direction: column;
+	min-height: 95vh;
+	}
+	.main {
+	flex: 1;
+	justify-content: center;
+    align-items: center;
+	}
+	.logo{
+	height: 450px;
+	width: 450px;
+	border-radius: 5px;
+	margin-right: 150px;
+	
+	}
+
+	h1 {
+	font-size: 5rem;
+	text-align: center;
+	}
+
+	footer {
+	text-align: center;
+	color: midnightblue;
+	}
+
+	.tile-image {
+	height: 250px;
+	width: 250px;
+	float: left;
+	margin-right: 50px;
+	
+	border-radius: 50%;
+	}
+
+	.card {
+	width: 45%;
+	}
+
+	.left {
+	float: left;
+	}
+
+	.right {
+	float: right;
+	}
+
+	.creative {
+	color: midnightblue;
+	}
+
+	@media (max-width: 680px) {
+	.tile-image {
+	height: 250px;
+	width: 250px;
+	position: inline;
+	float: left;
+	margin-right: 50px;
+	}
+
+	h1 {
+    font-size: 3.5rem;
+    text-align: center;
+	}
+
+	.card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+	}
+
+	.card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+	}
+	}
+	.pricing-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     gap: 2rem;
+    }
+	.pricing-plan {
+	flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+    }
+
+    .plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+	}
+
+    .plan-price {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    .plan-button {
+      padding: 10px;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+    }
+
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+	</style>
+</head>
+
+<body>
+  <div class="main">
+    <img class="logo" src="./img/logo.png" alt="logo">
+    <h1>We can help with your <br /> <span class="creative">website development, legal and advertising</span> <br /> needs</h1>
+    <div class="left card"><img class="tile-image" src="./img/program.jpg" alt="programming">
+      <h2 class="card-title">Advertising/Website</h2>
+      <p class="card-text">We strive to create the most beautiful websites for all your needs. Working closely with you
+        to
+        design and
+        develop an amazing website for your business.</p>
+    </div>
+
+    <div class="right card"><img class="tile-image" src="./img/court.jpg" alt="legal assistance">
+      <h2 class="card-title">Legal_assistance</h2>
+      <p>Use our legal team to solve all your legal matters, get your last will and testament drafted or get
+        a contract drafted in order to rent your property.</p>
+    </div>
+
+  </div>
+  <section>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Learn programming</div>
+      <div class="plan-price">from R100/month</div>
+      <ul class="plan-features">
+        <li>✅ HTML</li>
+        <li>✅ CSS</li>
+        <li>✅ Java Script/Python</li>
+      </ul>
+      <button class="plan-button"><a href="./email_form.html"> 
+		<p>Sign Up</p>
+		</a></button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Website/Advertise</div>
+      <div class="plan-price">from R100/month</div>
+      <ul class="plan-features">
+        <li>✅ Promote your business</li>
+        <li>✅ Get your own website</li>
+        <li>✅ Help and Support</li>
+      </ul>
+      <button class="plan-button"><a href="./email_form.html"> 
+		<p>Sign Up</p>
+		</a></button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Legal</div>
+      <div class="plan-price">from R1500/consultation</div>
+      <ul class="plan-features">
+        <li>✅ Draft your Wills</li>
+        <li>✅ Draft a contract</li>
+        <li>✅ Get a Lawyer</li>
+      </ul>
+      <button class="plan-button"><a href="./email_form.html"> 
+		<p>Sign Up</p>
+		</a></button>
+    </div>
+  </div>
+
+</section>
+  <footer>
+      <div>
+		<a href="./email_form.html"> 
+		<p>Send an email to us</p>
+		</a>
+	</div>
+  </footer>
+
